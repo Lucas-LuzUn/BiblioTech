@@ -48,5 +48,5 @@ function login(event) {
 }
 
 function Acessar(){
-    window.location.href = "/Bibliotech/pages/home.html"
+    window.location.href = "/BiblioTech/pages/home.html"
 }
