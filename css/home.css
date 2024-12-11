@@ -1,0 +1,105 @@
+/*
+Este arquivo contém toda a estilização para tornar visivel para o usuário os livros retornados pelo Google Books API
+
+PALETAS DE CORES:
+AZUL: #153448
+VERMELHO: #9d132ad1
+DOURADO: #dac0a3
+*/
+
+#titulo_busca {
+    color: #153448de;
+    margin: 0 40px;
+}
+
+#list_livros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 90vw;
+    gap: 64px;
+    margin: 32px auto;
+}
+
+.livros-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: smaller;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgba(237, 237, 237, 0.512);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: 0.3s;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.livros-info:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.titulo-livro {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.info_livros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 8px;
+}
+
+.capa-livro {
+    width: 75%;
+}
+
+#button-detalhes{
+    width: 100%;
+}
+
+.button_alugar{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #9d132ad1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+@media (max-width: 768px) {
+
+    #list_livros {
+        grid-template-columns: 1fr 1fr;
+        /* Exibe os itens em uma única coluna para telas menores */
+        gap: 35px;
+        /* Ajusta o espaçamento entre os itens */
+        margin: 20px 5px;
+        /* Ajusta a margem para centralizar o grid */
+    }
+
+    .livros-info {
+        font-size: smaller;
+        /* Ajusta o tamanho da fonte para telas menores */
+        padding: 10px;
+        /* Aumenta o padding para melhor usabilidade */
+        width: 100%;
+        /* Garante que as caixas de informações ocupem toda a largura disponível */
+    }
+
+    .capa-livro {
+        width: 100%;
+        /* Ajusta a largura da imagem da capa para se adaptar ao contêiner */
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <link rel="icon" href="/Bibliotech/imagens/icon_logo.png" type="image/png">
+</head>
+<body>
+
+    <main class="content">
+        <header>
+            <a href="#"><img src="imagens/logo.png" width="130px" height="40px" class="logo" alt="Logo"> </a>
+            <h1>Faça seu login</h1>
+        </header>
+
+        <p id="msg_erro"></p>
+
+        <form class="formulario" onsubmit="login(event)">
+            <label for="input_usuario">Usuário</label>
+            <input type="text" name="email" id="input_usuario" class="input_login" placeholder="Digite seu usuário:">
+
+            <label for="input_senha">Senha:</label>
+            <input type="password" name="senha" id="input_senha" class="input_login" placeholder="Digite sua senha:">
+
+            <button type="submit" id="button_login">Entrar</button>
+            <button type="button" id="button_acessar" onclick="Acessar()">Entrar sem login</button>
+        </form>
+        <p>Não possui cadastro?<a href="/Bibliotech/pages/cadastro.html"> Clique aqui.</a></p>
+    </main>
+
+    <aside id="ilustracao">
+        <img src="imagens/imagem1.png" alt="Ilustração de login" width="365px">
+    </aside>
+
+    <script src="/Bibliotech/js/login.js"></script>
+
+</body>
+</html>

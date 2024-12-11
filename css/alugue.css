@@ -1,0 +1,44 @@
+/*daqui para baixo é a estilização do formulario para o usuário alugar o livro desejado.*/
+
+#container-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+    font-weight: bolder;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#title-form{
+    padding: 0px 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.input-form{
+    margin: 0 0 10px 0;
+    border-radius: 5px;
+    border: 2px solid #153448;
+    height: 25px;
+    padding: 0 0 0 10px;
+}
+
+#button-send{
+    padding: 10px;
+    background-color: #9d132ad1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+    font-weight: bolder;
+    margin-top: 5px;
+}
+
+#button-send:hover{
+    background-color: #ac142e;
+}

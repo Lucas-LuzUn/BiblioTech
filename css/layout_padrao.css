@@ -1,0 +1,211 @@
+/*
+Este arquivo contém toda a estilização padrão do site. Unifiquei tudo em um único arquivo para que nos demais a estilização não se repita
+
+PALETAS DE CORES:
+AZUL: #153448
+VERMELHO: #c81634
+DOURADO: #dac0a3
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    color: #153448;
+}
+
+#header_principal {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+    /* Espaçamento interno opcional */
+    margin: auto;
+    border-top: 10px solid #153448de;
+}
+
+#itens_principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    border: 2px solid #153448de;
+    border-radius: 8px;
+}
+
+#barra_pesquisa {
+    width: 350px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+#button_pesquisa {
+    height: 28px;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 2px;
+    background-color: #fff;
+    color: aliceblue;
+    font-size: smaller;
+    font-weight: bold;
+    transition: 0.7ms;
+    cursor: pointer;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#button_pesquisa:active {
+    transform: scale(0.95);
+}
+
+
+#nav_principal {
+    color: #fff;
+    background-color: #153448de;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+
+.button_menu {
+    text-decoration: none;
+    transition: 0.5ms;
+    margin: 5px;
+    padding: 1px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: medium;
+}
+
+.button_menu:hover {
+    color: #153448;
+    transition: 0.5ms;
+    background-color: #fff;
+}
+
+#footer_principal {
+    background-color: #9d132ad1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/*aqui adaptei a estilização para que fique responsiva a tela de um smartphone*/
+
+@media (max-width: 768px) {
+
+    #header_principal {
+        flex-direction: row;
+        /* Ajusta a direção dos itens no cabeçalho */
+        align-items: center;
+        justify-content: space-between;
+        /* Centraliza itens no cabeçalho */
+    }
+
+
+    #itens_principal {
+        flex-direction: row;
+        /* Ajusta a direção dos itens na seção de itens */
+        width: 40%;
+        /* Garante que os itens ocupem toda a largura disponível */
+        padding: 2px;
+        /* Ajusta o padding para telas menores */
+    }
+
+    #barra_pesquisa {
+        width: 90%;
+        /* Ajusta a largura para ser mais responsiva */
+        max-width: 100%;
+        /* Garante que não ultrapasse a largura do contêiner */
+        height: 30px;
+        /* Ajusta a altura para melhor usabilidade em dispositivos móveis */
+        padding: 5px 10px;
+        /* Aumenta o padding para melhor interação em telas menores */
+    }
+
+    #button_pesquisa {
+        width: 40%;
+        /* Ajusta o botão para ocupar toda a largura disponível */
+        height: 40px;
+        /* Ajusta a altura do botão */
+        margin-left: 0;
+        /* Remove a margem esquerda para botões empilhados */
+        padding: 5px;
+        /* Ajusta o padding para maior área clicável */
+        font-size: medium;
+        /* Aumenta a legibilidade em dispositivos móveis */
+    }
+
+    #nav_principal {
+        flex-direction: column;
+        /* Alinha os itens de navegação em coluna para dispositivos menores */
+        height: auto;
+        /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 10px;
+        /* Adiciona padding para melhor espaçamento em dispositivos móveis */
+    }
+
+    .button_menu {
+        margin: 8px 0;
+        /* Ajusta a margem para espaçamento vertical */
+        padding: 2px 7px;
+        /* Ajusta o padding para botões de menu em dispositivos móveis */
+
+    }
+
+    .button_menu i{
+        display: none;
+    }
+
+    #titulo_busca {
+        margin: 10px 10px;
+        /* Ajusta a margem para centralizar o título de busca */
+    }
+
+    #footer_principal {
+        padding: 10px;
+        /* Ajusta o padding para o rodapé */
+        font-size: smaller;
+        /* Ajusta o tamanho da fonte para melhor legibilidade em dispositivos móveis */
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        /* Exibe os itens da lista em blocos para melhor visualização */
+        margin: 5px 0;
+        /* Ajusta a margem para espaçamento vertical */
+    }
+}

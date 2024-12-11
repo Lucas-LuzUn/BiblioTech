@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Bibliotech/css/livro.css">
+    <link rel="stylesheet" href="/Bibliotech/css/sidebar.css">
+    <link rel="stylesheet" href="/Bibliotech/css/layout_padrao.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <title>BiblioTech</title>
+
+    <link rel="icon" href="/Bibliotech/imagens/icon_logo.png" type="image/png">
+</head>
+<body>
+
+    <header id="header_principal">
+
+        <button id="toggleButton">
+            <i class="fas fa-bars" onclick="open_menu()"></i> 
+            <span>Menu</span>
+        </button> <!-- Ícone de menu -->
+
+        <div id="sideBar" class="sidebar hidden">
+            <div id="menuContent">
+                <ul>
+                    <li><a href="/Bibliotech/pages/home.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="/Bibliotech/pages/sobre_nos.html"><i class="fa-solid fa-people-group"></i> Sobre Nós</a></li>
+                    <li><a href="emprestimo.html"><i class="fas fa-hand-holding"></i> Meus Empréstimos</a></li>
+                    <li><a href="/Bibliotech/index.html"><i class="fa-solid fa-door-open"></i> Sair</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="/Bibliotech/pages/home.html">
+            <img src="/Bibliotech/imagens/logo.png" width="150px" alt="Logo BiblioTech">
+        </a>
+
+        <div id="itens_principal">
+            <input type="text" placeholder="Procure o livro que deseja:" id="barra_pesquisa">
+            <button id="button_pesquisa" onclick="pesquisar()"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #213454;"></i></button>
+        </div>
+        
+        <a href="/Bibliotech/index.html" id="icon_login">
+            <i class="fa-solid fa-user fa-2xl" style="color: #213454;"></i>
+        </a>
+    </header>
+
+    <nav id="nav_principal">
+        <div id="menu_principal">
+            <a class="button_menu" href="#"><i class="fas fa-heart"></i> Romance</a>
+            |
+            <a class="button_menu" href="#"><i class="fas fa-khanda"></i> Aventura</a> <!-- Ícone da espada precisa ser adicionado -->
+            |
+            <a class="button_menu" href="#"><i class="fas fa-hat-wizard"></i> Fantasia</a>
+            |
+            <a class="button_menu" href="#"><i class="fas fa-skull"></i> Terror</a>
+        </div>
+    </nav>
+
+    <main>
+        <div id="livro_aluguel">
+            <!-- Aqui você pode adicionar o conteúdo dinâmico que será carregado -->
+        </div>
+    </main>
+
+    <footer id="footer_principal">
+        <h3>&copy; 2023 - Todos os direitos reservados</h3>
+        <nav id="nav_rodape">
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="/Bibliotech/pages/sobre_nos.html">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="/Bibliotech/js/livro.js"></script>
+    <script src="/Bibliotech/js/config.js"></script>
+    
+</body>
+</html>

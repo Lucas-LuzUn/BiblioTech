@@ -1,0 +1,204 @@
+/*
+PALETAS DE CORES:
+AZUL: #153448
+VERMELHO: #c81634
+DOURADO: #dac0a3
+*/
+
+/* Define a altura total do corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.content
+{
+    margin: 10px 10px 10px 50px;
+    padding: 15px 60px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#msg_erro{
+    font-size: smaller;
+    font-weight: bold;
+    font-style: italic;
+    color: #c81634;
+    margin: 0;
+}
+
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    color: #153448;
+    width: 100%;
+}
+
+.formulario label {
+    margin-top: 5px;
+    font-weight: bolder;
+}
+
+.input_login {
+    margin: 5px 0px 5px 0px;
+    border-radius: 5px;
+    border: 2px solid #153448;
+    padding: 0px 0px 0px 10px;
+    height: 25px;
+}
+
+#button_login {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #9d132ad1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+    font-weight: bolder;
+}
+
+#button_login:hover {
+    background-color: #ac142e;
+}
+
+#button_acessar {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    color: #9d132ad1;
+    border: 2px solid #9d132ad1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+#button_acessar:hover{
+    background-color: #9d132ad1;
+    color: white;
+    border: 2px solid #9d132ad1;
+    transition: 0.3s;
+}
+
+#link_cadastro {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#link_cadastro a {
+    color: #3e4a65;
+    text-decoration: none;
+}
+
+#link_cadastro a:hover {
+    text-decoration: underline;
+}
+
+#ilustracao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+a{
+    text-decoration: underline;
+    color: #3e4a65;
+}
+
+a:visited{
+    text-decoration: underline;
+    color: #3e4a65;
+}
+
+@media (max-width: 768px) {
+    /* Ajustes no corpo da página */
+    body {
+        padding: 0; /* Remove o padding para centralizar o conteúdo */
+        height: 100vh; /* Garante que a altura da tela seja usada */
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        margin: 0;
+        flex-direction: column; /* Alinha itens em coluna */
+    }
+
+    /* Ajustes no contêiner de conteúdo */
+    .content {
+        margin: 0; /* Remove a margem para centralizar o contêiner */
+        padding: 20px; /* Adiciona padding para o contêiner */
+        width: 85%; /* Garante que o contêiner ocupe a largura total disponível */
+        max-width: 400px; /* Define uma largura máxima para o contêiner */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* Remove a sombra */
+        text-align: center; /* Centraliza o texto dentro do contêiner */
+    }
+
+    /* Ajustes no cabeçalho */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ajustes na mensagem de erro */
+    #msg_erro {
+        font-size: 14px;
+    }
+
+    /* Ajustes no formulário */
+    .formulario {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura */
+    }
+
+    .formulario label {
+        display: block; /* Faz com que o label ocupe a largura total */
+        margin-top: 10px; /* Adiciona margem superior */
+        text-align: left; /* Alinha o texto do label à esquerda */
+    }
+
+    /* Ajustes nos campos de entrada */
+    #input_usuario, #input_senha {
+        width: calc(100% - 20px); /* Ajusta a largura para que os inputs não ocupem toda a largura disponível */
+        height: 30px; /* Ajusta a altura dos campos de entrada */
+        margin-top: 5px; /* Adiciona margem superior */
+        margin-bottom: 10px; /* Adiciona margem inferior */
+    }
+
+    /* Ajustes no botão de login */
+    #button_login {
+        margin-top: 20px;
+        padding: 15px;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Ajustes no link de cadastro */
+    #link_cadastro {
+        font-size: 16px;
+    }
+
+    /* Ocultar a imagem com ID "ilustracao" em dispositivos móveis */
+    #ilustracao {
+        display: none;
+    }
+}

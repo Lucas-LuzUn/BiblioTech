@@ -1,0 +1,217 @@
+
+/*Apenas a estilização das informações do livro que o usuario deseja ver*/
+
+
+#livro_aluguel{
+    margin: 20px 0;
+    padding: 10px 100px;
+}
+
+.container_principal{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:8px;
+    padding: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+}
+
+.container_img{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.capa-livro{
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+.info_livro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button_alugar{
+    background-color: #9d132ad1;
+    border: none;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #9d132ad1;
+    height: 10%;
+    transition: 0.5ms;
+}
+
+.button_alugar:hover{
+    transition: 0.5ms;
+    background-color: #7b1223d1;
+}
+
+.button_alugar:active{
+    transition: 0.5ms;
+    transform: scale(0.95);
+}
+
+.container_descricao{
+    grid-column: 1 / -1; /* Ocupa todas as colunas */
+    grid-row: 2; /* Segunda linha */
+    width: 100%; /* Garante que ocupe 100% da largura */
+    font-size:medium;
+}
+
+/* Estilo responsivo para telas menores que 768px (smartphones e tablets pequenos) */
+@media (max-width: 768px) {
+
+    #header_home {
+        flex-direction: row;
+        /* Ajusta a direção dos itens no cabeçalho */
+        align-items: center;
+        justify-content: space-between;
+        /* Centraliza itens no cabeçalho */
+    }
+
+
+    #itens_home {
+        flex-direction: row;
+        /* Ajusta a direção dos itens na seção de itens */
+        width: 40%;
+        /* Garante que os itens ocupem toda a largura disponível */
+        padding: 2px;
+        /* Ajusta o padding para telas menores */
+    }
+
+    #barra_pesquisa {
+        width: 90%;
+        /* Ajusta a largura para ser mais responsiva */
+        max-width: 100%;
+        /* Garante que não ultrapasse a largura do contêiner */
+        height: 30px;
+        /* Ajusta a altura para melhor usabilidade em dispositivos móveis */
+        padding: 5px 10px;
+        /* Aumenta o padding para melhor interação em telas menores */
+    }
+
+    #button_pesquisa {
+        width: 40%;
+        /* Ajusta o botão para ocupar toda a largura disponível */
+        height: 40px;
+        /* Ajusta a altura do botão */
+        margin-left: 0;
+        /* Remove a margem esquerda para botões empilhados */
+        padding: 5px;
+        /* Ajusta o padding para maior área clicável */
+        font-size: medium;
+        /* Aumenta a legibilidade em dispositivos móveis */
+    }
+
+    #nav_home {
+        flex-direction: column;
+        /* Alinha os itens de navegação em coluna para dispositivos menores */
+        height: auto;
+        /* Ajusta a altura para se adaptar ao conteúdo */
+        padding: 10px;
+        /* Adiciona padding para melhor espaçamento em dispositivos móveis */
+    }
+
+    .button_menu {
+        margin: 8px 0;
+        /* Ajusta a margem para espaçamento vertical */
+        padding: 2px 7px;
+        /* Ajusta o padding para botões de menu em dispositivos móveis */
+
+    }
+
+    .button_menu i{
+        display: none;
+    }
+
+    #footer_home {
+        padding: 10px;
+        /* Ajusta o padding para o rodapé */
+        font-size: smaller;
+        /* Ajusta o tamanho da fonte para melhor legibilidade em dispositivos móveis */
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        display: block;
+        /* Exibe os itens da lista em blocos para melhor visualização */
+        margin: 5px 0;
+        /* Ajusta a margem para espaçamento vertical */
+    }
+
+    /*daqui para baixo vai apenas as inforçãoes dos livros que o usuário deseja visualizar no celular*/
+    #livro_aluguel {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: 100%;
+
+    }
+    
+    /* Layout principal */
+    .container_principal {
+        flex: 1;
+        display:block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    /* Imagem do livro */
+    .container_img {
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .capa-livro {
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+    }
+    
+    /* Informações do livro */
+    .info_livro {
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+    
+    .button_alugar {
+        width: 100%;
+        height: 40px; /* Aumenta para acessibilidade */
+        font-size: medium;
+    }
+    
+    /* Descrição do livro */
+    .container_descricao {
+        width: 100%;
+        padding: 10px;
+        font-size: small;
+        text-align: justify;
+    }
+    
+    .sinopse-livro {
+        display: none; /* Oculta sinopse */
+    }
+    
+    /* Adicionando estilo ao botão */
+    .button_alugar:hover {
+        background-color: #7b1223d1;
+        color: white;
+        transition: 0.3s ease;
+    }
+}

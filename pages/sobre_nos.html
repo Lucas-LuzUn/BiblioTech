@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/Bibliotech/css/sobre_nos.css">
+    <link rel="stylesheet" href="/Bibliotech/css/sidebar.css">
+    <link rel="stylesheet" href="/Bibliotech/css/layout_padrao.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <title>BiblioTech</title>
+    
+    <link rel="icon" href="/Bibliotech/imagens/icon_logo.png" type="image/png">
+</head>
+<body>
+
+    <header id="header_principal">
+
+        <button id="toggleButton">
+            <i class="fas fa-bars" onclick="open_menu()"></i> 
+            <span>Menu</span>
+        </button> <!-- Ícone de menu -->
+
+        <div id="sideBar" class="sidebar hidden">
+            <div id="menuContent">
+                <ul>
+                    <li><a href="/Bibliotech/pages/home.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                    <li><a href="/Bibliotech/pages/sobre_nos.html"><i class="fa-solid fa-people-group"></i> Sobre Nós</a></li>
+                    <li><a href="emprestimo.html"><i class="fas fa-hand-holding"></i> Meus Empréstimos</a></li>
+                    <li><a href="/Bibliotech/index.html"><i class="fa-solid fa-door-open"></i> Sair</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="/Bibliotech/pages/home.html">
+            <img src="/Bibliotech/imagens/logo.png" width="150px" alt="Logo BiblioTech">
+        </a>
+
+        <div id="itens_principal">
+            <input type="text" placeholder="Procure o livro que deseja:" id="barra_pesquisa">
+            <button id="button_pesquisa" onclick="pesquisar()"><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #213454;"></i></button>
+        </div>
+        
+        <a href="/Bibliotech/index.html" id="icon_login">
+            <i class="fa-solid fa-user fa-2xl" style="color: #213454;"></i>
+        </a>
+    </header>
+
+    <nav id="nav_principal">
+        <div id="menu_principal">
+            <a class="button_menu" href="#"><i class="fas fa-heart"></i> Romance</a>
+            |
+            <a class="button_menu" href="#"><i class="fas fa-khanda"></i> Aventura</a> <!-- Ícone da espada precisa ser adicionado -->
+            |
+            <a class="button_menu" href="#"><i class="fas fa-hat-wizard"></i> Fantasia</a>
+            |
+            <a class="button_menu" href="#"><i class="fas fa-skull"></i> Terror</a>
+        </div>
+    </nav>
+
+    <main id="container-principal">
+        <div id="container-texto">
+            <h1>Conheça a BiblioTech</h1>
+
+            <p>
+                O BiblioTech é o resultado de um projeto acadêmico desenvolvido com dedicação e criatividade por estudantes comprometidos em trazer inovação ao universo literário. <br><br>
+                Nosso objetivo foi criar uma plataforma funcional e intuitiva, onde usuários podem explorar um catálogo de livros, acessar informações detalhadas e realizar o aluguel de obras de maneira simples e moderna. <br><br>
+                Durante o desenvolvimento, aplicamos conceitos fundamentais de Programação Orientada a Objetos (POO) e seguimos o padrão de arquitetura MVC (Model-View-Controller) para garantir organização e eficiência no código. Utilizamos linguagens e ferramentas como C# com Windows Forms, MySQL para o banco de dados e Java no backend. <br> <br>
+                No front-end, desenvolvemos uma interface intuitiva e funcional utilizando HTML, CSS e JavaScript, garantindo uma navegação fluida e responsiva. Além disso, integramos a API do Google Books para enriquecer a experiência dos usuários com informações e capas de livros apresentadas de forma dinâmica e moderna. <br><br>
+                Outro destaque do projeto foi a API desenvolvida em Spring Boot por um dos membros da equipe, que possibilitou a comunicação entre o sistema e o banco de dados de forma segura e eficiente. Essa API foi essencial para implementar funcionalidades como login, cadastro de usuários e controle de empréstimos de livros, tornando o sistema robusto e escalável. <br><br>
+                Esse projeto foi um grande desafio, mas também uma oportunidade incrível de colocar em prática o que aprendemos na faculdade. Foi uma jornada repleta de aprendizado em equipe, superação de problemas e muito crescimento profissional. <br><br>
+                Estamos orgulhosos do que alcançamos e queremos compartilhar esse trabalho com o mundo! Nosso desejo é inspirar outros estudantes a se aventurarem na criação de projetos impactantes e a explorarem o potencial da tecnologia para resolver problemas reais. <br><br>
+                #BiblioTech #ProjetoAcadêmico #Tecnologia #Inovação #Faculdade
+            </p>
+
+        </div>
+
+        <div id="container-apresentacao">
+            
+            <h1>Sobre nós:</h1>
+            
+            <div class="container-pessoas">
+                    <img src="/Bibliotech/imagens/fotos/Imagem do WhatsApp de 2024-12-09 à(s) 21.49.14_a89c879e.jpg" class="foto">
+                <div class="apresentacao">
+                    <h2>Lucas Luz</h2>
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas, foi responsável pela criação do design e identidade visual do site. Além disso, desenvolveu a aplicação web em conjunto com Heber, implementando a integração da API criada por ele para comunicação com o banco de dados. Também participou do desenvolvimento da aplicação desktop em C#, seguindo os paradigmas de POO e MVC.
+                    </p>
+                    <a href="https://www.linkedin.com/in/lucas-luz-uzun-bb01312a3/" class="links"><i class="fa-brands fa-linkedin"></i> - Perfil LinkedIn</a>
+                    <a href="https://github.com/Lucas-LuzUn" class="links"><i class="fa-brands fa-github"></i></li> - Perfil GitHub</a>
+                </div>
+            </div>
+
+            <div class="container-pessoas">
+                <img src="/Bibliotech/imagens/fotos/Captura de tela 2024-12-09 214733.png" class="foto">
+                <div class="apresentacao">
+                    <h2>Heber Fábio</h2>
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas, foi o responsável por criar a API em Spring Boot, que tornou possível a integração entre o site e o banco de dados. Ele também participou para o desenvolvimento da aplicação desktop em C#, utilizando os princípios de MVC e POO.
+                    </p>
+                    <a href="https://www.linkedin.com/in/h%C3%A9ber-bonfim-a9644321b/" class="links"><i class="fa-brands fa-linkedin"></i> - Perfil LinkedIn</a>
+                    <a href="https://github.com/Heber2118" class="links"><i class="fa-brands fa-github"></i></li> - Perfil GitHub</a>
+                </div>
+            </div>
+
+            <div class="container-pessoas">
+                <img src="/Bibliotech/imagens/fotos/Imagem do WhatsApp de 2024-12-09 à(s) 12.28.16_b3511717.jpg" class="foto">
+                <div class="apresentacao">
+                    <h2>Camila Peretto</h2>
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas, dedicou-se à documentação do projeto, registrando todas as etapas e processos com clareza. Também foi responsável pela criação dos diagramas UML, que ajudaram a estruturar e planejar o sistema.
+                    </p>
+                    <a href="https://www.linkedin.com/in/camila-peretto/" class="links"><i class="fa-brands fa-linkedin"></i> - Perfil LinkedIn</a>
+                    <a href="https://github.com/Lucas-LuzUn" class="links"><i class="fa-brands fa-github"></i></li> - Perfil GitHub</a>
+                </div>
+            </div>
+
+            <div class="container-pessoas">
+                <img src="/Bibliotech/imagens/fotos/Imagem do WhatsApp de 2024-12-09 à(s) 14.12.06_fa88638d.jpg" class="foto">
+                <div class="apresentacao">
+                    <h2>Nicole Speranza</h2>
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas, contribuiu no suporte à elaboração da documentação e foi responsável por desenvolver toda a apresentação do projeto, garantindo que o trabalho fosse apresentado de forma clara e profissional.
+                    </p>
+                    <a href="https://www.linkedin.com/in/nicole-gon%C3%A7alves/" class="links"><i class="fa-brands fa-linkedin"></i> - Perfil LinkedIn</a>
+                    <a href="https://github.com/Lucas-LuzUn" class="links"><i class="fa-brands fa-github"></i></li> - Perfil GitHub</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer id="footer_principal">
+        <h3>&copy; 2023 - Todos os direitos reservados</h3>
+        <nav id="nav_rodape">
+            <ul>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Política de privacidade</a></li>
+                <li><a href="/Bibliotech/pages/sobre_nos.html">Sobre nós</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="/Bibliotech/js/config.js"></script>
+    
+</body>
+</html>
